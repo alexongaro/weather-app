@@ -22,8 +22,7 @@ function App() {
   .then(res => res.json())
   .then(res =>{
     setPost(res)
-    console.log(res)
-  }) 
+  }).catch(console.log("results not found")) 
   }
   return (
     <div>
